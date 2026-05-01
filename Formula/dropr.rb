@@ -1,7 +1,7 @@
 class Dropr < Formula
   desc "dropr CLI - MCP setup and workspace management for AI agents"
   homepage "https://github.com/nantokaworks/dropr"
-  version "0.1.6"
+  version "0.1.7"
 
   livecheck do
     url "https://cdn.dropr.sh/latest.txt"
@@ -10,23 +10,23 @@ class Dropr < Formula
 
   on_macos do
     on_arm do
-      url "https://cdn.dropr.sh/dropr-0.1.6-aarch64-apple-darwin.tar.gz"
-      sha256 "85a61cf2e387c800b1ebb5c64aede821d72f267b20679cad94f7dd21eb0b0ea1"
+      url "https://cdn.dropr.sh/dropr-0.1.7-aarch64-apple-darwin.tar.gz"
+      sha256 "0ece49fed9ebdc08b6b3a970e2c7e3261138bcfcb2d94157e557f2f4dd87f560"
     end
     on_intel do
-      url "https://cdn.dropr.sh/dropr-0.1.6-x86_64-apple-darwin.tar.gz"
-      sha256 "52c9958a69428a02bfbca547ed6f151641686c5f8d1e46f1fb70c1101b5cb2bf"
+      url "https://cdn.dropr.sh/dropr-0.1.7-x86_64-apple-darwin.tar.gz"
+      sha256 "a1e788887cabc8c16c701189fed889b804667a67c09640d160069a2673f83d7a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://cdn.dropr.sh/dropr-0.1.6-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "649ff39ffecd584e8e96b3ed98a308dc8866c215d26dc0de64538f72993d39e3"
+      url "https://cdn.dropr.sh/dropr-0.1.7-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0af83287907bd5300337a46f720eed564b8ee772aadcf7f7eddc767b3eb59346"
     end
     on_intel do
-      url "https://cdn.dropr.sh/dropr-0.1.6-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "748c803c2099192a2e139a43d1de39b3b01509415bfba10c0f06ec1e4839afb7"
+      url "https://cdn.dropr.sh/dropr-0.1.7-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f3b239aadb5477598a41a949987b233d3063115c05370f709f3f70c570e0aa7e"
     end
   end
 
