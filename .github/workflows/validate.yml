@@ -1,0 +1,41 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    name: validate / Validate
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Register workspace as tap
+        run: |
+          TAP_DIR="$(brew --repository)/Library/Taps/nantokaworks/homebrew-tap"
+          mkdir -p "$(dirname "$TAP_DIR")"
+          ln -s "$GITHUB_WORKSPACE" "$TAP_DIR"
+
+      - name: Collect managed formulas
+        id: formulas
+        run: |
+          managed=()
+          for name in ghx wranglerx; do
+            if [ -f "Formula/${name}.rb" ]; then
+              managed+=("nantokaworks/tap/${name}")
+            fi
+          done
+          echo "list=${managed[*]}" >> "$GITHUB_OUTPUT"
+
+      - name: brew style
+        if: steps.formulas.outputs.list != ''
+        run: brew style ${{ steps.formulas.outputs.list }}
+
+      - name: brew audit
+        if: steps.formulas.outputs.list != ''
+        run: brew audit --online ${{ steps.formulas.outputs.list }}
