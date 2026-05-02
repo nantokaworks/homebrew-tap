@@ -11,7 +11,18 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Register workspace as tap
+        run: |
+          TAP_DIR="$(brew --repository)/Library/Taps/nantokaworks/homebrew-tap"
+          mkdir -p "$(dirname "$TAP_DIR")"
+          ln -s "$GITHUB_WORKSPACE" "$TAP_DIR"
+
       - name: brew style
-        run: brew style --formula Formula/*.rb
+        run: brew style nantokaworks/tap
+
       - name: brew audit
-        run: brew audit --formula --online Formula/*.rb
+        run: brew audit --tap nantokaworks/tap --online
