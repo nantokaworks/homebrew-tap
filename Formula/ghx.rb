@@ -1,7 +1,6 @@
 class Ghx < Formula
   desc "Thin wrapper around gh for multi-account GitHub usage"
   homepage "https://github.com/nantokaworks/clix"
-  version "0.3.1"
   license "MIT"
 
   livecheck do
