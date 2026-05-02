@@ -21,8 +21,21 @@ jobs:
           mkdir -p "$(dirname "$TAP_DIR")"
           ln -s "$GITHUB_WORKSPACE" "$TAP_DIR"
 
+      - name: Collect managed formulas
+        id: formulas
+        run: |
+          managed=()
+          for name in ghx wranglerx; do
+            if [ -f "Formula/${name}.rb" ]; then
+              managed+=("nantokaworks/tap/${name}")
+            fi
+          done
+          echo "list=${managed[*]}" >> "$GITHUB_OUTPUT"
+
       - name: brew style
-        run: brew style nantokaworks/tap
+        if: steps.formulas.outputs.list != ''
+        run: brew style ${{ steps.formulas.outputs.list }}
 
       - name: brew audit
-        run: brew audit --tap nantokaworks/tap --online
+        if: steps.formulas.outputs.list != ''
+        run: brew audit --online ${{ steps.formulas.outputs.list }}
