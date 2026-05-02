@@ -1,8 +1,8 @@
 class Ghx < Formula
-  desc "A thin wrapper around gh for multi-account GitHub usage"
+  desc "Thin wrapper around gh for multi-account GitHub usage"
   homepage "https://github.com/nantokaworks/clix"
-  license "MIT"
   version "0.3.1"
+  license "MIT"
 
   livecheck do
     url :stable

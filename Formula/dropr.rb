@@ -1,12 +1,14 @@
 class Dropr < Formula
-  desc "dropr CLI - MCP setup and workspace management for AI agents"
+  desc "MCP setup and workspace management CLI for AI agents"
   homepage "https://github.com/nantokaworks/dropr"
   version "0.1.9"
 
+  # rubocop:disable FormulaAudit/LivecheckUrlSymbol
   livecheck do
     url "https://cdn.dropr.sh/latest.txt"
     regex(/(\d+\.\d+\.\d+)/i)
   end
+  # rubocop:enable FormulaAudit/LivecheckUrlSymbol
 
   on_macos do
     on_arm do
