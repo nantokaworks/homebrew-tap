@@ -1,0 +1,17 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: brew style
+        run: brew style --formula Formula/*.rb
+      - name: brew audit
+        run: brew audit --formula --online Formula/*.rb
