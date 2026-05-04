@@ -25,7 +25,7 @@ jobs:
         id: formulas
         run: |
           managed=()
-          for name in ghx wranglerx; do
+          for name in flyx ghx wranglerx; do
             if [ -f "Formula/${name}.rb" ]; then
               managed+=("nantokaworks/tap/${name}")
             fi
