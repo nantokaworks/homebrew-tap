@@ -10,23 +10,23 @@ class Flyx < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nantokaworks/clix/releases/download/flyx-v0.1.0/flyx-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "1e00dec4137b94b0c9e9fc4f6da4fb820f6ad13927bfbbba9e763b988cdbbf52"
+      url "https://github.com/nantokaworks/clix/releases/download/flyx-v0.1.1/flyx-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "db76e79f4298dc3b71b82c64898b046ad8a249dee8e225798f0dd66315117bb5"
     end
     on_intel do
-      url "https://github.com/nantokaworks/clix/releases/download/flyx-v0.1.0/flyx-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "bad2edf588e09c5825c3522b1e2b3e207833eb5a4d010d9eba609f3a2a0ceff2"
+      url "https://github.com/nantokaworks/clix/releases/download/flyx-v0.1.1/flyx-v0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "ae2b3aa2e3f601a174ee16ef3f4096982e8a926d22302236ed44eb7a860a1091"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nantokaworks/clix/releases/download/flyx-v0.1.0/flyx-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b99af4355e81d9b019328ef9798489954574eb40f4074edd9da95d8902826cd8"
+      url "https://github.com/nantokaworks/clix/releases/download/flyx-v0.1.1/flyx-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2f33c3880afa87418934d11a3e07213598961cbe6d653090cc69e31490311722"
     end
     on_intel do
-      url "https://github.com/nantokaworks/clix/releases/download/flyx-v0.1.0/flyx-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "35beaf115d7c9a4b18616c061e50295772fb35075c05512a04d877a261c44c07"
+      url "https://github.com/nantokaworks/clix/releases/download/flyx-v0.1.1/flyx-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f280313e4faf36508a36dd39c432ded2d93c0981a76f027dd11e8a22964949a0"
     end
   end
 
