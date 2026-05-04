@@ -10,23 +10,23 @@ class Ghx < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nantokaworks/clix/releases/download/ghx-v0.4.1/ghx-v0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "c20a49f2482cc4eef2c64a782e156584c4d64c841477b0511ed5d467f12be937"
+      url "https://github.com/nantokaworks/clix/releases/download/ghx-v0.4.2/ghx-v0.4.2-aarch64-apple-darwin.tar.gz"
+      sha256 "dc1a1e47234fc3e816578f17d9329e62255832a81cba753fc6082b8f6e38f0dc"
     end
     on_intel do
-      url "https://github.com/nantokaworks/clix/releases/download/ghx-v0.4.1/ghx-v0.4.1-x86_64-apple-darwin.tar.gz"
-      sha256 "7408da0e3334269e1efc153c680d19d16f1bf6b76ebeaace5e86d60ba36736d9"
+      url "https://github.com/nantokaworks/clix/releases/download/ghx-v0.4.2/ghx-v0.4.2-x86_64-apple-darwin.tar.gz"
+      sha256 "04b59884e55c8613225967a3bf00f8cd18bc06171cb9f0a4d1886800a693020b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nantokaworks/clix/releases/download/ghx-v0.4.1/ghx-v0.4.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "768909dcd86db1fa7214d784d319dd8812ff8b21e5076a23261cdfc76141a05d"
+      url "https://github.com/nantokaworks/clix/releases/download/ghx-v0.4.2/ghx-v0.4.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1beca72e87132424cc865fca6d1be3866d8748f512ff8b88d22bfd0ebb1bd59e"
     end
     on_intel do
-      url "https://github.com/nantokaworks/clix/releases/download/ghx-v0.4.1/ghx-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9a3c2f8dcd14b63c4d220e9f9eaf40c922565e38e429eb5341410fd15dcc4e53"
+      url "https://github.com/nantokaworks/clix/releases/download/ghx-v0.4.2/ghx-v0.4.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ce12e17c5a3a4dc5daa0ccb33ddbb4ba44ab18bc9170121e57926c686125b28e"
     end
   end
 
