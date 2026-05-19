@@ -1,7 +1,7 @@
 class Dropr < Formula
   desc "dropr CLI - MCP setup and workspace management for AI agents"
   homepage "https://github.com/nantokaworks/dropr"
-  version "0.4.1"
+  version "0.4.2"
 
   livecheck do
     url "https://github.com/nantokaworks/dropr-releases/releases.atom"
@@ -10,23 +10,23 @@ class Dropr < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.1/dropr-0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "ee3a6cb604199d922fe6e371983e330c6b1ec5fdf05ae837f0d877f3660c8c69"
+      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.2/dropr-0.4.2-aarch64-apple-darwin.tar.gz"
+      sha256 "7efe3d90513dc9fb2eee56bb7b1c6bb793157099db4d4c83ea2f7bba633e7d4e"
     end
     on_intel do
-      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.1/dropr-0.4.1-x86_64-apple-darwin.tar.gz"
-      sha256 "3eab2269153de5b2196afb05addc99b1db51ad14c542ba7f2277764b3ed5378f"
+      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.2/dropr-0.4.2-x86_64-apple-darwin.tar.gz"
+      sha256 "64474128ecf94ce07cee89f414850dc5a025b8717054b586fc18dbfa8cc28f64"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.1/dropr-0.4.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b1152bf393709f1edfef3135f3c331253e0703adbf6171d293fd5f07123d4388"
+      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.2/dropr-0.4.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "471838c63b00dfec028eb28bd20bd4d5b7bc6ac48ea0a4ec10bd4a49da690333"
     end
     on_intel do
-      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.1/dropr-0.4.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8c87c3f69420f508b54f25d130f940cab5a41486ae700d41331ba9450578ca5a"
+      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.2/dropr-0.4.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6f44e7d94d24672c196b7f6456d3f64ce288fd479859a9ee6e39dcfff1d53b3f"
     end
   end
 
