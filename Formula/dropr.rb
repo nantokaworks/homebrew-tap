@@ -1,7 +1,7 @@
 class Dropr < Formula
   desc "dropr CLI - MCP setup and workspace management for AI agents"
   homepage "https://github.com/nantokaworks/dropr"
-  version "0.4.13"
+  version "0.4.14"
 
   livecheck do
     url "https://github.com/nantokaworks/dropr-releases/releases.atom"
@@ -10,23 +10,23 @@ class Dropr < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.13/dropr-0.4.13-aarch64-apple-darwin.tar.gz"
-      sha256 "68af78be6937a4e8e24a49b269b91e72147dd05732394be23ea3febf251bd928"
+      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.14/dropr-0.4.14-aarch64-apple-darwin.tar.gz"
+      sha256 "3f08b5b467f34ccf34f25e6fea39d595199c56d5455715e0bf48dd1ba8e94d70"
     end
     on_intel do
-      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.13/dropr-0.4.13-x86_64-apple-darwin.tar.gz"
-      sha256 "dd88e2fc1b09e93032c4c5edc0a67738877ec0631f057cbc4f155ae3d96bd378"
+      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.14/dropr-0.4.14-x86_64-apple-darwin.tar.gz"
+      sha256 "c5f89f78a4c00e428d3c9f2b38427299deaf4ed1328e5a0fb83b117f2a2fd9f7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.13/dropr-0.4.13-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "06d04f5a80d263f9d9c2d337bfb0c6c098eacd8a7b0f38c834acb0f32682a79a"
+      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.14/dropr-0.4.14-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b6bae0304d3895e68b6eda6b2cbaebf77107aa17a89bbdb6fd118260bc99d028"
     end
     on_intel do
-      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.13/dropr-0.4.13-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7a7ac8542640729ba30fc6e24609ee579845178d03082e043296fad8d53c829b"
+      url "https://github.com/nantokaworks/dropr-releases/releases/download/cli-v0.4.14/dropr-0.4.14-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "03342c5067d0768ff48106dee9869080e592d9f5374492554134a784708efc4d"
     end
   end
 
