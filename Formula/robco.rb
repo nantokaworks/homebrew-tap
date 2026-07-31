@@ -1,7 +1,7 @@
 class Robco < Formula
   desc "Repo-oriented terminal cockpit for supervising AI coding agents"
   homepage "https://github.com/nantokaworks/robco"
-  version "0.1.85"
+  version "0.1.86"
 
   livecheck do
     url "https://github.com/nantokaworks/robco-releases/releases.atom"
@@ -10,23 +10,23 @@ class Robco < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.1.85/robco-0.1.85-aarch64-apple-darwin.tar.gz"
-      sha256 "ee693c78f1ec57beb6361fbc4518579d1116a4b324ddc32d1d20863767ab56b5"
+      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.1.86/robco-0.1.86-aarch64-apple-darwin.tar.gz"
+      sha256 "4cd4d96f925c2e19e3b4516c736b5818700a24f081e647db87d5c63e7145ed2a"
     end
     on_intel do
-      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.1.85/robco-0.1.85-x86_64-apple-darwin.tar.gz"
-      sha256 "fc15111d9c1202ca6d7fc1bcd6124d5f4bd4e63e4428bccbefd56614aaf0c61f"
+      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.1.86/robco-0.1.86-x86_64-apple-darwin.tar.gz"
+      sha256 "6b15bd3d220af7264aaad4a45baeab116b614465ab2d6cb78e474668701a4784"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.1.85/robco-0.1.85-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f37e0ff56fcfa3578088c51b77b0fbe540838fce806635cfc6b47f04995eedbc"
+      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.1.86/robco-0.1.86-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "db48507b310c19bb90609347fe12e6c0fcdb6ab09dac6d0d049adad3158b35f6"
     end
     on_intel do
-      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.1.85/robco-0.1.85-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bd21c839b4d900982a0528ba6ca0e7576d9880071d6187e9c81153f52b133d2a"
+      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.1.86/robco-0.1.86-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d42d21dd6bebc2360be2e331d6f9b94d15a5dc2f37612e2f6e891ed06eb0a850"
     end
   end
 
