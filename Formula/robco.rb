@@ -1,7 +1,7 @@
 class Robco < Formula
   desc "Repo-oriented terminal cockpit for supervising AI coding agents"
   homepage "https://github.com/nantokaworks/robco"
-  version "0.4.7"
+  version "0.5.0"
 
   livecheck do
     url "https://github.com/nantokaworks/robco-releases/releases.atom"
@@ -10,23 +10,23 @@ class Robco < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.4.7/robco-0.4.7-aarch64-apple-darwin.tar.gz"
-      sha256 "a0dc3a27012cb0784c2445b614c7637bc9429582552ec4636467f16468682bdf"
+      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.5.0/robco-0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "e1a9647fb5c548c04c6d632ec99d9da6eedd94cf07ba03bf118e9e6127cda792"
     end
     on_intel do
-      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.4.7/robco-0.4.7-x86_64-apple-darwin.tar.gz"
-      sha256 "9bd90285a18331fef3545adeb6f6da873573560cdf085bbe99d8ed73da47d43f"
+      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.5.0/robco-0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "05c14252a72fd505bebc249d3366b612f8f73daad8ae11346c913e763ce00b16"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.4.7/robco-0.4.7-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "56bb4b0fc5029e3d5d6e860c8192b69b2b5e9a0d4669c5c0b88425756c9141a2"
+      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.5.0/robco-0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bd2eb747398356475f7efbf54572b1fd11072d435140b7f9f96d17b0c4d5b3bb"
     end
     on_intel do
-      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.4.7/robco-0.4.7-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fd6481218532a7e96b2157c3d4c5f74d459931658323b15f5bdd5a335e26557e"
+      url "https://github.com/nantokaworks/robco-releases/releases/download/v0.5.0/robco-0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c91ac528f6cf31849957055eb03d598c4846e457fc9256375f48371aa925b247"
     end
   end
 
